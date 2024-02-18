@@ -11,14 +11,22 @@
 }
 
 :root {
+    
+    /* --bg-color: #222;
+    --second-bg-color: #333;
+    --third-bg-color:#444;
+    --text-color: #fff;
+    --main-color: #f3d8c3;
+    --second-main-color: #ccc; */
+
     --bg-color: #fff;
     --second-bg-color: #e5e1d5;
-    --third-bg-color:#FCF1CA;
+    --third-bg-color:#FCF1CA; 
     --text-color: #333333;
     --main-color: #5f5854;
     --second-main-color: #f3d8c3;
-    --black-color: #333;
-    --white-color: #fff;
+    --white-and-black-color:#fff;
+    --black-and-white-color:#000;
 
 }
 
@@ -86,6 +94,23 @@ html::-webkit-scrollbar-thumb {
     color: var(--main-color);
     display: none;
     cursor: pointer;
+}
+#dark-mode-icon {
+    font-size: 3rem;
+    color: var(--main-color);
+    cursor: pointer;
+    margin-left: 4rem;
+    width: 30px;
+    height: 30px;
+}
+
+.dark-theme {
+    --bg-color: #222;
+    --second-bg-color: #333;
+    --third-bg-color:#444;
+    --text-color: #fff;
+    --main-color: #f3d8c3;
+    --second-main-color: #ccc;
 }
 section {
     min-height: 100vh;
@@ -177,6 +202,7 @@ span {
 }
 .typing-text span {
     position: relative;
+    display: inline-block;
 }
 .typing-text span::before {
     content: "Full Stack Developer";
@@ -352,7 +378,7 @@ span {
     right: 30px;
     border: medium solid var(--main-color);
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent var(--main-color);
+    border-color: transparent transparent transparent var(--third-bg-color);
 }
 .education .right::before {
     content: "";
@@ -364,13 +390,13 @@ span {
     left: 30px;
     border: medium solid var(--main-color);
     border-width: 10px  10px 10px 0;
-    border-color: transparent var(--main-color) transparent transparent ;
+    border-color: transparent var(--third-bg-color) transparent transparent ;
 }
 .education .right::after {
     left: -16px;
 }
 .education .content {
-    background: var(--main-color);
+    background: var(--third-bg-color);
     position: relative;
     border-radius: 6px;
 }
@@ -392,7 +418,7 @@ span {
 .education .content .desc p {
     font-size: 1.3rem;
     font-weight: 500;
-    color: #fcf1ca;
+    color: var(--black-color);
     text-align: justify;
 }
 

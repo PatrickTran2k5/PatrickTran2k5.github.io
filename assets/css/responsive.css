@@ -19,6 +19,10 @@
     .navbar.active {
         display: block;
     }
+    .navbar.active #dark-mode-icon {
+        margin-left: 0;
+    }
+
     .navbar a {
         display: block;
         font-size: 2rem;
@@ -119,7 +123,7 @@
         left: 61px;
         border: medium solid var(--main-color);
         border-width: 10px 10px 10px 0;
-        border-color: transparent var(--main-color) transparent transparent;
+        border-color: transparent var(--third-bg-color) transparent transparent;
     }
     .education .left::after {
         left: 15px;
@@ -148,5 +152,12 @@
         padding-bottom: 7rem;
         grid-template-columns: repeat(2, 1fr) ;
         margin: 0 5rem;
+    }
+}
+
+/* <= 500px */
+@media (max-width:500px) {
+    .typing-text span {
+        display: block;
     }
 }

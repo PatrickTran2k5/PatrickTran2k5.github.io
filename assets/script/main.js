@@ -51,4 +51,13 @@ formElement.onsubmit = (event) => {
     console.log(formValue);
 }
 
-
+// Dark mode
+var darkModeIcon = document.getElementById('dark-mode-icon');
+darkModeIcon.onclick = () => {
+    document.body.classList.toggle("dark-theme");
+    if (document.body.classList.contains("dark-theme")) {
+        darkModeIcon.classList.replace('fa-sun', 'fa-moon');
+    } else {
+        darkModeIcon.classList.replace('fa-moon', 'fa-sun');
+    }
+}
